@@ -46,22 +46,24 @@
             this.label1.Size = new System.Drawing.Size(113, 13);
             this.label1.TabIndex = 0;
             this.label1.Tag = "custom";
-            this.label1.Text = "by Michael Oborne";
+            this.label1.Text = "by Jerry Fuller";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // TXT_version
             // 
             this.TXT_version.BackColor = System.Drawing.Color.Transparent;
             this.TXT_version.ForeColor = System.Drawing.Color.White;
-            this.TXT_version.Location = new System.Drawing.Point(403, 107);
+            this.TXT_version.Location = new System.Drawing.Point(403, 145);
             this.TXT_version.Name = "TXT_version";
             this.TXT_version.Size = new System.Drawing.Size(155, 25);
             this.TXT_version.TabIndex = 1;
-            this.TXT_version.Text = "Version: ";
+            this.TXT_version.Text = "Version: 0.1";
             this.TXT_version.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::MissionPlanner.Properties.Resources._01_03;
             this.pictureBox1.Location = new System.Drawing.Point(207, 25);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(351, 89);
@@ -72,7 +74,6 @@
             // 
             // Splash
             // 
-
             this.BackgroundImage = global::MissionPlanner.Properties.Resources.splashdark;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(584, 336);
